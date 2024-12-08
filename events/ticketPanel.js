@@ -58,7 +58,7 @@ client.on("interactionCreate", async (interaction) =>  {
 				]});
 			}
 			const ticketNumber = await getTicketNumber(guildData.ticketCounter, dataGuild, interaction.guild.id);
-			await interaction.guild.channels.create(`ticket-${ticketNumber}`, {
+			await interaction.guild.channels.create(`exchange-${ticketNumber}`, {
 				type: "text",
 				parent: ticketData.panelCategory,
 				permissionOverwrites: [
